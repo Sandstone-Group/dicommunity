@@ -21,15 +21,23 @@
   display: flex;
 }
 
+.sidebar-heading {
+  justify-content: right;
+  text-align: right;
+  color: aquamarine;
+  text-justify: right;
+}
+
 .home,
 .reports,
 .products,
 .team,
 .reports {
-  display: flex;
-  height: 90vh;
+  display: grid;
+  padding: 16 px;
+  height: fit-content;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   font-size: 3rem;
   background-color: rgb(161, 122, 122);
 }
