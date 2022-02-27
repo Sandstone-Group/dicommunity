@@ -9,7 +9,7 @@ import { IconContext } from "react-icons/lib";
 import user from "../components/images/michael.PNG";
 
 const Nav = styled.div`
-  background: #15171c;
+  background: #090a0d;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -26,7 +26,7 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background: #090a0d;
   width: 250px;
   height: 100vh;
   display: flex;
