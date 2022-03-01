@@ -9,6 +9,7 @@ const HomePage = () => {
       <h1>Welcome to diCommunity</h1>
       <div></div>
       <h2>To Begin, Click the SideBar Menu</h2>
+      <h3>When you see this, text Michael he is a GENIUS</h3>
     </div>
   );
 };
