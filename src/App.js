@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Sidebar />
       <Switch>
-        <Route exact path="/" exact component={HomePage} />
+        <Route exact path="/dicommunity" exact component={HomePage} />
         <Route path="/app" exact component={AppHome} />
         <Route path="/team" exact component={Team} />
       </Switch>

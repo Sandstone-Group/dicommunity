@@ -29,4 +29,9 @@ export const SidebarData = [
     path: "/account",
     icon: <IoIcons.IoMdPerson />,
   },
+  {
+    title: "Home",
+    path: "/dicommunity",
+    icon: <IoIcons.IoIosHome />,
+  },
 ];
