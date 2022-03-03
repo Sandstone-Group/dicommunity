@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .home-logo {
@@ -47,6 +47,12 @@
   height: 100%;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -70,9 +76,8 @@
 }
 
 .green-column {
-  background-color: rgb(0, 0, 0);
   height: 180px;
-  color: white;
+  color: rgb(3, 3, 3);
   text-align: center;
   padding-top: 10px;
 }

@@ -1,8 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
+
+var downloadDICdata =
+  "https://sandstonegroup.us/wp-content/uploads/2021/01/Access-to-Vehicles.csv";
+
+var downloadUScensusData =
+  "https://sandstonegroup.us/wp-content/uploads/2021/01/Access-to-Vehicles.csv";
 
 const AppHome = () => {
   return (
@@ -23,9 +29,26 @@ const AppHome = () => {
           </div>
           <div class="column-two">
             <div class="green-column">{gisText}</div>
-            <button onSubmit="">DOWNLOAD THE DATA</button>
           </div>
         </div>
+      </div>
+      <div className="button">
+        <Button
+          variant="dark"
+          size="lg"
+          onSubmit=""
+          onClick={() => window.open(downloadDICdata, "_blank")}
+        >
+          Dowload
+        </Button>
+        <Button
+          variant="dark"
+          size="lg"
+          onSubmit=""
+          onClick={() => window.open(downloadUScensusData, "_blank")}
+        >
+          Download
+        </Button>
       </div>
       <div className="padding-left">
         <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
