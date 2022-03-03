@@ -21,7 +21,7 @@ const AppHome = () => {
               ></iframe>
             </div>
           </div>
-          <div class="column">
+          <div class="column-two">
             <div class="green-column">{gisText}</div>
             <button onSubmit="">DOWNLOAD THE DATA</button>
           </div>

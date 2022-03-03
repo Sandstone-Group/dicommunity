@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
@@ -34,7 +34,7 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
+  transition: 450ms;
   z-index: 10;
 `;
 
@@ -58,23 +58,13 @@ const Sidebar = () => {
           </Nav>
         </div>
         <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
+          <SidebarWrap onClick={showSidebar}>
             <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })}
-            <div className="side-menu-footer">
-              <div className="title">User</div>
-              <div className="avatar">
-                <img src={user} alt="user" />
-              </div>
-              <div className="user-info">
-                <h5>Michael Tanner</h5>
-                <p>mtanner@sandstone-group.com</p>
-              </div>
-            </div>
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>

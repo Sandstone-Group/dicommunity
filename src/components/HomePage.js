@@ -4,11 +4,11 @@ import logo from "./images/logo_h.png";
 
 const HomePage = () => {
   return (
-    <div className="home-text">
+    <div className="home-logo">
       <img src={logo}></img>
       <h1>Welcome to diCommunity</h1>
       <div></div>
-      <h2>To Begin, Click the SideBar Menu</h2>
+      <h2>To Begin, Click the Sidebar Menu</h2>
     </div>
   );
 };

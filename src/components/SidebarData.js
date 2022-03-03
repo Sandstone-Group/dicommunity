@@ -6,6 +6,11 @@ import * as RiIcons from "react-icons/ri";
 
 export const SidebarData = [
   {
+    title: "Home",
+    path: "/dicommunity",
+    icon: <IoIcons.IoIosHome />,
+  },
+  {
     title: "App",
     path: "/app",
     icon: <IoIcons.IoIosPaper />,
@@ -23,15 +28,5 @@ export const SidebarData = [
     title: "Support",
     path: "/support",
     icon: <IoIcons.IoMdHelpCircle />,
-  },
-  {
-    title: "My Account",
-    path: "/account",
-    icon: <IoIcons.IoMdPerson />,
-  },
-  {
-    title: "Home",
-    path: "/dicommunity",
-    icon: <IoIcons.IoIosHome />,
   },
 ];
