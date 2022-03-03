@@ -1,18 +1,33 @@
 import React from "react";
-import { MDBInput } from "mdbreact";
+import { useNavigate } from "react-router-dom";
+
+var gisText =
+  "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
 
 const AppHome = () => {
   return (
     <>
-      <div>
-        <iframe
-          title="GIS"
-          width="1200"
-          height="800"
-          src="https://sandstone.maps.arcgis.com/apps/webappviewer/index.html?id=a8c48643ca1946549750cf38d1d2d66c"
-          frameborder="0"
-          allowFullScreen="true"
-        ></iframe>
+      <div class="some-page-wrapper">
+        <div class="row">
+          <div class="column">
+            <div class="blue-column">
+              <iframe
+                title="GIS"
+                width="1200"
+                height="800"
+                src="https://sandstone.maps.arcgis.com/apps/webappviewer/index.html?id=a8c48643ca1946549750cf38d1d2d66c"
+                frameborder="0"
+                allowFullScreen="true"
+              ></iframe>
+            </div>
+          </div>
+          <div class="column">
+            <div class="green-column">{gisText}</div>
+            <button onSubmit="">DOWNLOAD THE DATA</button>
+          </div>
+        </div>
+      </div>
+      <div className="padding-left">
         <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
         <div className="input-group">
           <div className="input-group-prepend">

@@ -26,6 +26,43 @@
   text-align: left;
 }
 
+.some-page-wrapper {
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.blue-column {
+  background-color: rgb(255, 255, 255);
+  height: flex;
+  padding-left: 30px;
+}
+
+.green-column {
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+
+.padding-left {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .home-below {
   display: grid;
   padding-top: 16 px;
