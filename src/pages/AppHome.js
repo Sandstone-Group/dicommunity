@@ -15,7 +15,7 @@ const AppHome = () => {
         <iframe
           title="DIC Demo Dashboard"
           width="1200"
-          height="500"
+          height="715"
           src="https://app.powerbi.com/view?r=eyJrIjoiYTU4MmY3MWItZmQ4Zi00NTRiLWI5ZjktZjI5YWI1MGVhYjQ4IiwidCI6IjA1MTM5NTUzLWVlOTAtNDdhZi1iNmY3LTU0ZDk2OTc4ZTQ5ZSJ9&pageName=ReportSection"
           frameborder="0"
           allowFullScreen="true"

@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import HomePage from "./components/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AppHome from "./pages/AppHome";
-import Team from "./pages/Team";
+import Community from "./pages/Community";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/dicommunity" exact component={HomePage} />
         <Route path="/app" exact component={AppHome} />
-        <Route path="/team" exact component={Team} />
+        <Route path="/community" exact component={Community} />
       </Switch>
     </Router>
   );

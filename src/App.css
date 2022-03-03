@@ -5,17 +5,49 @@
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
+  background-color: black;
 }
 
 .home {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 16 px;
+  padding-right: 100px;
+  height: fit-content;
+  align-items: right;
+  justify-content: right;
+  font-size: 3rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.home-below {
+  display: grid;
+  padding-top: 16 px;
+  padding-right: 100px;
+  height: fit-content;
+  align-items: right;
+  justify-content: right;
+  font-size: 3rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.home-submit {
+  display: grid;
   padding-top: 16 px;
   padding-right: 75px;
   height: fit-content;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
   font-size: 3rem;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(189, 37, 37);
+}
+
+.align-form {
+  text-align: left;
+  font-size: 16px;
+  margin-top: auto;
+  vertical-align: top;
+  display: flex;
 }
 
 .side-menu-footer {
