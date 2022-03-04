@@ -29,4 +29,10 @@ export const SidebarData = [
     path: "/support",
     icon: <IoIcons.IoMdHelpCircle />,
   },
+
+  {
+    title: "My Account",
+    path: "/myaccount",
+    icon: <IoIcons.IoIosPerson />,
+  },
 ];

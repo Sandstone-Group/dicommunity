@@ -13,6 +13,7 @@ function App() {
         <Route exact path="/dicommunity" exact component={HomePage} />
         <Route path="/app" exact component={AppHome} />
         <Route path="/community" exact component={Community} />
+        <Route path="/myaccount" exact component={Community} />
       </Switch>
     </Router>
   );

@@ -1,5 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
@@ -12,8 +16,8 @@ var downloadUScensusData =
 
 const AppHome = () => {
   return (
-    <>
-      <div class="some-page-wrapper">
+    <div className="background-color">
+      <div>
         <div class="row">
           <div class="column">
             <div class="blue-column">
@@ -28,27 +32,31 @@ const AppHome = () => {
             </div>
           </div>
           <div class="column-two">
-            <div class="green-column">{gisText}</div>
+            <div class="green-column">
+              {gisText}
+              <div className="button-style">
+                <Button
+                  variant="dark"
+                  size="lg"
+                  onSubmit=""
+                  onClick={() => window.open(downloadDICdata, "_blank")}
+                >
+                  <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> DIC
+                  Data
+                </Button>
+                <Button
+                  variant="dark"
+                  size="lg"
+                  onSubmit=""
+                  onClick={() => window.open(downloadDICdata, "_blank")}
+                >
+                  <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> US
+                  Census Data
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="button">
-        <Button
-          variant="dark"
-          size="lg"
-          onSubmit=""
-          onClick={() => window.open(downloadDICdata, "_blank")}
-        >
-          Dowload
-        </Button>
-        <Button
-          variant="dark"
-          size="lg"
-          onSubmit=""
-          onClick={() => window.open(downloadUScensusData, "_blank")}
-        >
-          Download
-        </Button>
       </div>
       <div className="padding-left">
         <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
@@ -74,7 +82,7 @@ const AppHome = () => {
           ></iframe>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

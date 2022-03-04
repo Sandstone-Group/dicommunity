@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .home-logo {
   display: block;
   margin-left: auto;
@@ -14,6 +7,10 @@
   width: 50%;
   padding-top: 45px;
   text-align: center;
+}
+
+.background-color {
+  background-color: #191e2b;
 }
 
 .home {
@@ -70,16 +67,21 @@
 }
 
 .blue-column {
-  background-color: rgb(255, 255, 255);
   height: flex;
-  padding-left: 30px;
+  padding-left: 70px;
+}
+
+.button-style {
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 .green-column {
   height: 180px;
   color: rgb(3, 3, 3);
   text-align: center;
-  padding-top: 10px;
+  padding-top: 40px;
+  display: grid;
 }
 
 .padding-left {
