@@ -4,6 +4,8 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
+import "arch-editor/dist/arch-editor.css";
+import Blocktractform from "../components/Blocktractform";
 
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
@@ -21,6 +23,7 @@ const AppHome = () => {
         <div class="row">
           <div class="column">
             <div class="blue-column">
+              <h1>GIS Map</h1>
               <iframe
                 title="GIS"
                 width="1200"
@@ -36,7 +39,7 @@ const AppHome = () => {
               {gisText}
               <div className="button-style">
                 <Button
-                  variant="dark"
+                  variant="light"
                   size="lg"
                   onSubmit=""
                   onClick={() => window.open(downloadDICdata, "_blank")}
@@ -45,13 +48,13 @@ const AppHome = () => {
                   Data
                 </Button>
                 <Button
-                  variant="dark"
+                  variant="light"
                   size="lg"
                   onSubmit=""
                   onClick={() => window.open(downloadDICdata, "_blank")}
                 >
                   <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> US
-                  Census Data
+                  Census ESPN
                 </Button>
               </div>
             </div>
@@ -60,18 +63,8 @@ const AppHome = () => {
       </div>
       <div className="padding-left">
         <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
-        <div className="input-group">
-          <div className="input-group-prepend">
-            <span className="input-group-text" id="basic-addon">
-              <i className="fas fa-pencil-alt prefix"></i>
-            </span>
-          </div>
-          <textarea
-            className="form-control"
-            id="exampleFormControlTextarea1"
-            label="Test"
-            rows="5"
-          ></textarea>
+        <Blocktractform />
+        <div className="background-column">
           <iframe
             title="DIC Demo Dashboard"
             width="1200"
