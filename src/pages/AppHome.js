@@ -23,47 +23,40 @@ const AppHome = () => {
         <div class="row">
           <div class="column">
             <div class="blue-column">
-              <h1>GIS Map</h1>
               <iframe
                 title="GIS"
-                width="1200"
-                height="800"
+                width="1000"
+                height="750"
                 src="https://sandstone.maps.arcgis.com/apps/webappviewer/index.html?id=a8c48643ca1946549750cf38d1d2d66c"
                 frameborder="0"
                 allowFullScreen="true"
               ></iframe>
-            </div>
-          </div>
-          <div class="column-two">
-            <div class="green-column">
-              {gisText}
-              <div className="button-style">
-                <Button
-                  variant="light"
-                  size="lg"
-                  onSubmit=""
-                  onClick={() => window.open(downloadDICdata, "_blank")}
-                >
-                  <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> DIC
-                  Data
-                </Button>
-                <Button
-                  variant="light"
-                  size="lg"
-                  onSubmit=""
-                  onClick={() => window.open(downloadDICdata, "_blank")}
-                >
-                  <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> US
-                  Census ESPN
-                </Button>
-              </div>
+              <Blocktractform />
             </div>
           </div>
         </div>
       </div>
+      <div className="button-style">
+        <Button
+          variant="light"
+          size="lg"
+          onSubmit=""
+          onClick={() => window.open(downloadDICdata, "_blank")}
+        >
+          <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> DIC Data
+        </Button>
+        <Button
+          variant="light"
+          size="lg"
+          onSubmit=""
+          onClick={() => window.open(downloadDICdata, "_blank")}
+        >
+          <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> US Census
+          ESPN
+        </Button>
+      </div>
       <div className="padding-left">
         <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
-        <Blocktractform />
         <div className="background-column">
           <iframe
             title="DIC Demo Dashboard"

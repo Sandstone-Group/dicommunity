@@ -1,9 +1,14 @@
 import React from "react";
 import "../components/Blocktractform.css";
 import data from "../mockData.json";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
 import Readonlyrow from "./Readonlyrow";
+import { Button } from "react-bootstrap";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 const Blocktractform = () => {
   const [didata, setDidata] = useState(data);
@@ -54,20 +59,29 @@ const Blocktractform = () => {
       <h2 className="title">Add Your Block Group and Tract Number Here</h2>
       <form onSubmit={handleAddFormSubmit}>
         <input
-          type="text"
+          type="float"
           name="blockGroup"
           required="required"
           placeholder="Enter Block Group #"
           onChange={handleAddFormChange}
         />
         <input
-          type="text"
+          type="float"
           name="tract"
           required="required"
           placeholder="Enter Tract #"
           onChange={handleAddFormChange}
         />
-        <button type="submit">Add To List</button>
+        <div className="button">
+          <Button type="submit" variant="light">
+            <IoIcons.IoIosAddCircle size={45} className="pr-1" />
+            Add To List
+          </Button>
+          <Button type="reset" variant="light">
+            <IoIcons.IoIosClose size={45} className="pr-1" />
+            Reset
+          </Button>
+        </div>
       </form>
     </div>
   );
