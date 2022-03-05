@@ -3,6 +3,7 @@ import "../components/Blocktractform.css";
 import data from "../mockData.json";
 import { useState } from "react";
 import { nanoid } from "nanoid";
+import Readonlyrow from "./Readonlyrow";
 
 const Blocktractform = () => {
   const [didata, setDidata] = useState(data);
@@ -46,10 +47,7 @@ const Blocktractform = () => {
         </thead>
         <tbody>
           {didata.map((didataCurrent) => (
-            <tr>
-              <td>{didataCurrent.blockGroup}</td>
-              <td>{didataCurrent.tract}</td>
-            </tr>
+            <Readonlyrow didataCurrent={didataCurrent} />
           ))}
         </tbody>
       </table>
