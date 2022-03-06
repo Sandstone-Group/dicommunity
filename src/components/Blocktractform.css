@@ -1,18 +1,25 @@
 .app-container {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
   padding: 1rem;
+  border: 1mm;
 }
-
 table {
   border-collapse: collapse;
+  width: 100%;
+  border: #000000, 1cm;
+  align-content: center;
+  font-size: larger;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
 th,
 td {
-  border: 1.5px solid #000000;
+  border: 1.5px solid #09051d;
   text-align: left;
   padding: 8px;
   font-size: 32px;
@@ -49,8 +56,14 @@ form * {
   font-size: 28px;
 }
 
+.form-style {
+  padding-top: 20px;
+}
+
 .title {
   color: rgb(26, 230, 19);
+  display: flex;
+  text-align: center;
 }
 
 .button {

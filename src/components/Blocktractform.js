@@ -3,7 +3,6 @@ import "../components/Blocktractform.css";
 import data from "../mockData.json";
 import { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
-import Readonlyrow from "./Readonlyrow";
 import { Button } from "react-bootstrap";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
@@ -11,6 +10,7 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 
 const Blocktractform = () => {
+  const columns = ["Block Group", "Tract"];
   const [didata, setDidata] = useState(data);
   const [addFormData, setAddFormData] = useState({
     blockGroup: "",
@@ -43,21 +43,19 @@ const Blocktractform = () => {
 
   return (
     <div className="app-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Block Group</th>
-            <th>Tract</th>
-          </tr>
-        </thead>
-        <tbody>
-          {didata.map((didataCurrent) => (
-            <Readonlyrow didataCurrent={didataCurrent} />
-          ))}
-        </tbody>
-      </table>
-      <h2 className="title">Add Your Block Group and Tract Number Here</h2>
-      <form onSubmit={handleAddFormSubmit}>
+      <div className="center">
+        <table>
+          <tbody>
+            {didata.map((didataCurrent) => (
+              <tr>
+                <td>{didataCurrent.blockGroup}</td>
+                <td>{didataCurrent.tract}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <form className="form-style" onSubmit={handleAddFormSubmit}>
         <input
           type="float"
           name="blockGroup"

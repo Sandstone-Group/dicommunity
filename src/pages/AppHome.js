@@ -10,6 +10,8 @@ import Blocktractform from "../components/Blocktractform";
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
 
+var header = "Disproportionately Impacted Community GIS Analysis";
+
 var downloadDICdata =
   "https://sandstonegroup.us/wp-content/uploads/2021/01/Access-to-Vehicles.csv";
 
@@ -19,21 +21,18 @@ var downloadUScensusData =
 const AppHome = () => {
   return (
     <div className="background-color">
+      <h1 className="master-title">{header}</h1>
       <div>
         <div class="row">
-          <div class="column">
-            <div class="blue-column">
-              <iframe
-                title="GIS"
-                width="1000"
-                height="750"
-                src="https://sandstone.maps.arcgis.com/apps/webappviewer/index.html?id=a8c48643ca1946549750cf38d1d2d66c"
-                frameborder="0"
-                allowFullScreen="true"
-              ></iframe>
-              <Blocktractform />
-            </div>
-          </div>
+          <iframe
+            title="GIS"
+            width="1000"
+            height="750"
+            src="https://sandstone.maps.arcgis.com/apps/webappviewer/index.html?id=a8c48643ca1946549750cf38d1d2d66c"
+            frameborder="0"
+            allowFullScreen="true"
+          ></iframe>
+          <Blocktractform />
         </div>
       </div>
       <div className="button-style">
@@ -56,7 +55,6 @@ const AppHome = () => {
         </Button>
       </div>
       <div className="padding-left">
-        <h2 className="home-title">Keep Track of your BLK GROUP and TRACT</h2>
         <div className="background-column">
           <iframe
             title="DIC Demo Dashboard"

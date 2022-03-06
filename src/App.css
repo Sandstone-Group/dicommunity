@@ -28,6 +28,12 @@
   background-color: aqua;
 }
 
+.master-title {
+  text-align: center;
+  color: rgb(26, 230, 19);
+  padding-top: 15px;
+}
+
 .home-title {
   text-align: left;
   color: rgb(26, 230, 19);
@@ -39,12 +45,13 @@
 }
 
 .row {
-  display: flex;
+  display: grid;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
   padding-top: 15px;
+  padding-left: 25px;
 }
 
 .button {
@@ -55,7 +62,7 @@
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-direction: grid;
   flex-basis: 100%;
   flex: 1;
 }
@@ -78,7 +85,6 @@
   padding-left: 70px;
   text-align: center;
   color: rgb(26, 230, 19);
-  display: flex;
 }
 
 .button-style {

@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "blockGroup": "",
-      "tract": ""
+      "blockGroup": "Enter Block Group",
+      "tract": "Enter Tract"
     }
 ]
