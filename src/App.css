@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .home-logo {
   display: block;
@@ -28,9 +28,16 @@
   background-color: aqua;
 }
 
+.center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+}
+
 .master-title {
   text-align: center;
-  color: rgb(26, 230, 19);
+  color: rgb(255, 255, 255);
   padding-top: 15px;
 }
 
@@ -45,17 +52,18 @@
 }
 
 .row {
-  display: grid;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  padding-top: 15px;
-  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-style {
+  display: flex;
+  height: 75px;
 }
 
 .button {
   display: flex;
+  flex-wrap: grid;
   align-items: center;
   justify-content: center;
 }
@@ -67,6 +75,14 @@
   flex: 1;
 }
 
+.row-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
 .column-two {
   display: flex;
   flex-direction: column;
@@ -76,8 +92,10 @@
   font-size: 150%;
 }
 
-.background.column {
-  background-color: #fff;
+.background-column {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .blue-column {
@@ -104,6 +122,7 @@
 .padding-left {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 45px;
 }
 
 .home-below {

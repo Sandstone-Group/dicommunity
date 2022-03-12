@@ -6,6 +6,8 @@ import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
 import "arch-editor/dist/arch-editor.css";
 import Blocktractform from "../components/Blocktractform";
+import ButtonTwo from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
@@ -32,27 +34,31 @@ const AppHome = () => {
             frameborder="0"
             allowFullScreen="true"
           ></iframe>
+        </div>
+        <div className="row-two">
           <Blocktractform />
         </div>
       </div>
-      <div className="button-style">
-        <Button
-          variant="light"
-          size="lg"
-          onSubmit=""
+      <div className="button">
+        <ButtonTwo
+          type="submit"
+          size="large"
+          variant="outlined"
           onClick={() => window.open(downloadDICdata, "_blank")}
+          startIcon={<IoIcons.IoIosCloudDownload />}
         >
-          <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> DIC Data
-        </Button>
-        <Button
-          variant="light"
-          size="lg"
-          onSubmit=""
+          Download DIC Data
+        </ButtonTwo>
+        <ButtonTwo
+          variant="outlined"
+          color="success"
+          size="large"
+          type="reset"
           onClick={() => window.open(downloadDICdata, "_blank")}
+          startIcon={<IoIcons.IoIosCloudDownload />}
         >
-          <IoIcons.IoIosCloudDownload size={45} className="pr-3" /> US Census
-          ESPN
-        </Button>
+          Download US Census Data
+        </ButtonTwo>
       </div>
       <div className="padding-left">
         <div className="background-column">

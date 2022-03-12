@@ -4,10 +4,9 @@ import data from "../mockData.json";
 import { useState, Fragment } from "react";
 import { nanoid } from "nanoid";
 import { Button } from "react-bootstrap";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
-import * as RiIcons from "react-icons/ri";
+import ButtonTwo from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 const Blocktractform = () => {
   const columns = ["Block Group", "Tract"];
@@ -71,14 +70,22 @@ const Blocktractform = () => {
           onChange={handleAddFormChange}
         />
         <div className="button">
-          <Button type="submit" variant="light">
-            <IoIcons.IoIosAddCircle size={45} className="pr-1" />
-            Add To List
-          </Button>
-          <Button type="reset" variant="light">
-            <IoIcons.IoIosClose size={45} className="pr-1" />
-            Reset
-          </Button>
+          <Stack direction="row" spacing={2}>
+            <ButtonTwo
+              type="submit"
+              variant="outlined"
+              startIcon={<IoIcons.IoIosAddCircle />}
+            >
+              Add to List
+            </ButtonTwo>
+            <ButtonTwo
+              variant="outlined"
+              type="reset"
+              endIcon={<IoIcons.IoIosCloseCircle />}
+            >
+              Reset
+            </ButtonTwo>
+          </Stack>
         </div>
       </form>
     </div>
