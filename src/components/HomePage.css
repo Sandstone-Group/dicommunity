@@ -7,7 +7,6 @@
 .align-items {
   align-items: center;
   justify-content: center;
-  display: grid;
   padding-top: 10px;
 }
 
@@ -15,4 +14,16 @@
   padding-top: 20px;
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+.header-padding {
+  padding-top: 25px;
+}
+
+.container {
+  height: "100%";
+  display: flex;
+  width: 250px;
+  padding-bottom: 75px;
+  padding-top: 25px;
 }

@@ -8,6 +8,7 @@ import "arch-editor/dist/arch-editor.css";
 import Blocktractform from "../components/Blocktractform";
 import ButtonTwo from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import DiDataTable from "../components/DiDataTable";
 
 var gisText =
   "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";

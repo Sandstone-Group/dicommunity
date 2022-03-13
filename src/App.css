@@ -11,6 +11,11 @@
 
 .background-color {
   background-color: #191e2b;
+  color: #fff;
+}
+
+.display-home {
+  padding-bottom: 50px;
 }
 
 .home {
@@ -32,7 +37,12 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-top: 10px;
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.header-padding {
+  padding-top: 25px;
 }
 
 .master-title {
@@ -59,6 +69,13 @@
 .form-style {
   display: flex;
   height: 75px;
+}
+
+.table-color {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -204,4 +221,9 @@
 
 .side-menu-footer .user-info p {
   font-size: 14px;
+}
+
+.align-right {
+  align-items: right;
+  justify-content: right;
 }
