@@ -9,9 +9,10 @@ import Blocktractform from "../components/Blocktractform";
 import ButtonTwo from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import DiDataTable from "../components/DiDataTable";
+import "../App.css";
 
 var gisText =
-  "Please use this GIS table to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top left.  Make sure to have a ZIP file or you will get an error";
+  "Please use this map to sort through the different diCommunities in Colorado. You can upload data via the 'Add Well Data' tab at the top right of the map.  Make sure to have a ZIP file otherwise you will get an error";
 
 var header = "Disproportionately Impacted Community GIS Analysis";
 
@@ -25,8 +26,9 @@ const AppHome = () => {
   return (
     <div className="background-color">
       <h1 className="master-title">{header}</h1>
-      <div>
-        <div class="row">
+      <div className="row">
+        <h4 className="master-title-sub">{gisText}</h4>
+        <div>
           <iframe
             title="GIS"
             width="1000"
@@ -36,7 +38,7 @@ const AppHome = () => {
             allowFullScreen="true"
           ></iframe>
         </div>
-        <div className="row-two">
+        <div>
           <Blocktractform />
         </div>
       </div>

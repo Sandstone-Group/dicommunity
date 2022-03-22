@@ -7,9 +7,10 @@ import { Button } from "react-bootstrap";
 import * as IoIcons from "react-icons/io";
 import ButtonTwo from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const Blocktractform = () => {
-  const columns = ["Block Group", "Tract"];
   const [didata, setDidata] = useState(data);
   const [addFormData, setAddFormData] = useState({
     blockGroup: "",
@@ -28,10 +29,13 @@ const Blocktractform = () => {
     setAddFormData(newFormData);
   };
 
+  let idNumber = 1;
+
   const handleAddFormSubmit = (event) => {
+    idNumber = nanoid();
     event.preventDefault();
     const newData = {
-      id: nanoid(),
+      id: idNumber,
       blockGroup: addFormData.blockGroup,
       tract: addFormData.tract,
     };
@@ -40,20 +44,44 @@ const Blocktractform = () => {
     setDidata(newDatas);
   };
 
+  const columnsBetter = [
+    { field: "id", headerName: "ID", width: 90 },
+    { field: "blockGroup", headerName: "Block Group", width: 150 },
+    { field: "tract", headerName: "Tract", width: 150 },
+  ];
+
+  const rowsBetter = didata.map((rowBetter) => ({
+    id: rowBetter.id,
+    blockGroup: rowBetter.blockGroup,
+    tract: rowBetter.tract,
+  }));
+
   return (
     <div className="app-container">
       <div className="center">
-        <table>
-          <tbody>
-            {didata.map((didataCurrent) => (
-              <tr>
-                <td>{didataCurrent.blockGroup}</td>
-                <td>{didataCurrent.tract}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div style={{ height: 500, width: "100%", color: "white" }}>
+          <DataGrid
+            sx={{
+              boxShadow: 2,
+              border: 2,
+              borderColor: "white",
+              color: "white",
+              "& .MuiDataGrid-cell:hover": {
+                color: "primary.dark",
+              },
+            }}
+            rows={rowsBetter}
+            columns={columnsBetter}
+            pageSize={20}
+            rowsPerPageOptions={[20]}
+            checkboxSelection
+            disableSelectionOnClick
+            components={{ Toolbar: GridToolbar }}
+            pagination
+          />
+        </div>
       </div>
+      <div>Add your DIC Data to the table above</div>
       <form className="form-style" onSubmit={handleAddFormSubmit}>
         <input
           type="float"

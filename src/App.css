@@ -45,10 +45,23 @@
   padding-top: 25px;
 }
 
+.button-padding {
+  padding-top: 10px;
+}
+
 .master-title {
   text-align: center;
   color: rgb(255, 255, 255);
   padding-top: 15px;
+}
+
+.master-title-sub {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 12pt;
+  font-weight: 200;
 }
 
 .home-title {
@@ -62,7 +75,7 @@
 }
 
 .row {
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
@@ -90,14 +103,6 @@
   flex-direction: grid;
   flex-basis: 100%;
   flex: 1;
-}
-
-.row-two {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 15px;
-  padding-left: 25px;
 }
 
 .column-two {
