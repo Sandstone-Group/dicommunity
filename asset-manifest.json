@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dicommunity/static/css/main.782350f6.css",
-    "main.js": "/dicommunity/static/js/main.404f8509.js",
+    "main.css": "/dicommunity/static/css/main.202c3e17.css",
+    "main.js": "/dicommunity/static/js/main.537aa8f2.js",
     "static/js/377.c9847eee.chunk.js": "/dicommunity/static/js/377.c9847eee.chunk.js",
     "static/media/fa-solid-900.svg": "/dicommunity/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/dicommunity/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
@@ -71,12 +71,12 @@
     "index.html": "/dicommunity/index.html",
     "static/media/arrow_left.svg": "/dicommunity/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/dicommunity/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
-    "main.782350f6.css.map": "/dicommunity/static/css/main.782350f6.css.map",
-    "main.404f8509.js.map": "/dicommunity/static/js/main.404f8509.js.map",
+    "main.202c3e17.css.map": "/dicommunity/static/css/main.202c3e17.css.map",
+    "main.537aa8f2.js.map": "/dicommunity/static/js/main.537aa8f2.js.map",
     "377.c9847eee.chunk.js.map": "/dicommunity/static/js/377.c9847eee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.782350f6.css",
-    "static/js/main.404f8509.js"
+    "static/css/main.202c3e17.css",
+    "static/js/main.537aa8f2.js"
   ]
 }
