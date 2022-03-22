@@ -58,30 +58,9 @@ const Blocktractform = () => {
 
   return (
     <div className="app-container">
-      <div className="center">
-        <div style={{ height: 500, width: "100%", color: "white" }}>
-          <DataGrid
-            sx={{
-              boxShadow: 2,
-              border: 2,
-              borderColor: "white",
-              color: "white",
-              "& .MuiDataGrid-cell:hover": {
-                color: "primary.dark",
-              },
-            }}
-            rows={rowsBetter}
-            columns={columnsBetter}
-            pageSize={20}
-            rowsPerPageOptions={[20]}
-            checkboxSelection
-            disableSelectionOnClick
-            components={{ Toolbar: GridToolbar }}
-            pagination
-          />
-        </div>
+      <div className="padding-better">
+        Add your DIC Data to the table then export your rows below{" "}
       </div>
-      <div>Add your DIC Data to the table above</div>
       <form className="form-style" onSubmit={handleAddFormSubmit}>
         <input
           type="float"
@@ -116,6 +95,29 @@ const Blocktractform = () => {
           </Stack>
         </div>
       </form>
+      <div className="center">
+        <div style={{ height: 500, width: "100%", color: "white" }}>
+          <DataGrid
+            sx={{
+              boxShadow: 2,
+              border: 2,
+              borderColor: "white",
+              color: "white",
+              "& .MuiDataGrid-cell:hover": {
+                color: "primary.dark",
+              },
+            }}
+            rows={rowsBetter}
+            columns={columnsBetter}
+            pageSize={20}
+            rowsPerPageOptions={[20]}
+            checkboxSelection
+            disableSelectionOnClick
+            components={{ Toolbar: GridToolbar }}
+            pagination
+          />
+        </div>
+      </div>
     </div>
   );
 };

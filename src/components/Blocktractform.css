@@ -16,6 +16,10 @@ table {
   width: 100%;
 }
 
+.padding-better {
+  padding-bottom: 12px;
+}
+
 th,
 td {
   border: 1.5px solid #09051d;
