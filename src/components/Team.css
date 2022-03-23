@@ -1,0 +1,13 @@
+.background-color {
+  background-color: #191e2b;
+}
+
+.center-card {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+}
+
+.padding-top {
+  padding-top: 25px;
+}

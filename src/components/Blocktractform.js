@@ -9,8 +9,16 @@ import ButtonTwo from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 
 const Blocktractform = () => {
+  const darkTheme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+  });
+
   const [didata, setDidata] = useState(data);
   const [addFormData, setAddFormData] = useState({
     blockGroup: "",
@@ -62,20 +70,22 @@ const Blocktractform = () => {
         Add your DIC Data to the table then export your rows below{" "}
       </div>
       <form className="form-style" onSubmit={handleAddFormSubmit}>
-        <input
-          type="float"
-          name="blockGroup"
-          required="required"
-          placeholder="Enter Block Group #"
-          onChange={handleAddFormChange}
-        />
-        <input
-          type="float"
-          name="tract"
-          required="required"
-          placeholder="Enter Tract #"
-          onChange={handleAddFormChange}
-        />
+        <ThemeProvider theme={darkTheme}>
+          <TextField
+            id="outlined-basic"
+            label="Enter Block Group"
+            variant="outlined"
+            name="blockGroup"
+            onChange={handleAddFormChange}
+          />
+          <TextField
+            id="outlined-basic"
+            label="Enter Tract #"
+            variant="outlined"
+            name="tract"
+            onChange={handleAddFormChange}
+          />
+        </ThemeProvider>
         <div className="button">
           <Stack direction="row" spacing={2}>
             <ButtonTwo

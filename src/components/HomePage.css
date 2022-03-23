@@ -2,6 +2,7 @@
   background-color: #191e2b;
   color: rgb(255, 255, 255);
   text-align: center;
+  height: 120vh;
 }
 
 .align-items {
@@ -17,13 +18,14 @@
 }
 
 .header-padding {
-  padding-top: 25px;
+  padding-top: 50px;
+  display: grid;
 }
 
-.container {
+.container-better {
   height: "100%";
-  display: flex;
-  width: 250px;
-  padding-bottom: 75px;
-  padding-top: 25px;
+  display: flexbox;
+  width: 750px;
+  padding-top: 35px;
+  padding-bottom: 20px;
 }

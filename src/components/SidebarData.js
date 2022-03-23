@@ -13,9 +13,7 @@ export const SidebarData = [
   {
     title: "App",
     path: "/app",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    icon: <IoIcons.IoIosApps />,
   },
 
   {
@@ -25,14 +23,13 @@ export const SidebarData = [
   },
 
   {
-    title: "Support",
-    path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: "Team",
+    path: "/team",
+    icon: <IoIcons.IoIosBody />,
   },
-
   {
-    title: "My Account",
-    path: "/myaccount",
-    icon: <IoIcons.IoIosPerson />,
+    title: "About diCommunity",
+    path: "/about",
+    icon: <IoIcons.IoIosSwitch />,
   },
 ];
