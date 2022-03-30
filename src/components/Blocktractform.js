@@ -86,24 +86,20 @@ const Blocktractform = () => {
             onChange={handleAddFormChange}
           />
         </ThemeProvider>
-        <div className="button">
-          <Stack direction="row" spacing={2}>
-            <ButtonTwo
-              type="submit"
-              variant="outlined"
-              startIcon={<IoIcons.IoIosAddCircle />}
-            >
-              Add to List
-            </ButtonTwo>
-            <ButtonTwo
-              variant="outlined"
-              type="reset"
-              endIcon={<IoIcons.IoIosCloseCircle />}
-            >
-              Reset
-            </ButtonTwo>
-          </Stack>
-        </div>
+        <ButtonTwo
+          type="submit"
+          variant="outlined"
+          startIcon={<IoIcons.IoIosAddCircle />}
+        >
+          Add to List
+        </ButtonTwo>
+        <ButtonTwo
+          variant="outlined"
+          type="reset"
+          endIcon={<IoIcons.IoIosCloseCircle />}
+        >
+          Reset
+        </ButtonTwo>
       </form>
       <div className="center">
         <div style={{ height: 500, width: "100%", color: "white" }}>

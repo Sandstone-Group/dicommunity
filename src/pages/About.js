@@ -12,7 +12,7 @@ const About = () => {
   });
   var website = "https://sandstone-group.com/";
   var aboutDi =
-    "diCommunity was built as the first open-source regulatory software offering desgined to help Colorado Oil and Gas Operators manage the implication of SB 181 on new permitted wells.  The team has since the passage of SB 181 in 2019, our team has been involved working with both state officals and industry stakeholders to ensure our application meets Colorado most stringent permitting guidelines. ";
+    "diCommunity was built as the first open-source regulatory software offering desgined to help Colorado Oil and Gas Operators manage the implication of SB 181 on new permitted wells.  Since the passage of SB 181 in 2019, our team has been involved in working with both state officals and industry stakeholders to ensure our application meets Colorado most stringent permitting guidelines. ";
   return (
     <div className="background-color">
       <div className="grid-display">

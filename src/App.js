@@ -13,15 +13,6 @@ function App() {
   return (
     <Router>
       <Sidebar />
-      <Helmet>
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js-na1.hs-scripts.com/21397066.js"
-        ></script>
-      </Helmet>
       <Switch>
         <Route exact path="/dicommunity" component={HomePage} />
         <Route path="/app" exact component={AppHome} />

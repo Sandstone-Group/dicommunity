@@ -2,7 +2,8 @@
   background-color: #191e2b;
   color: rgb(255, 255, 255);
   text-align: center;
-  height: 120vh;
+  height: 100%;
+  padding-bottom: 15px;
 }
 
 .align-items {
