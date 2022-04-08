@@ -23,7 +23,7 @@ var michaelTannerLinkedInUrl =
   "https://www.linkedin.com/in/michaeltannersandstone";
 
 const michaelTannerShortBio =
-  "Michael Tanner manages all aspects of development of diCommunity. He is also the Co-Founder of OpenOil Project which is dedicated to decentralizing oil and gas production data by making public well data free. Visit openoil.io to see the project ";
+  "Michael Tanner manages all aspects of development of diCommunity. He is also the Project Lead of OpenOil, which is dedicated to decentralizing oil and gas production data by making public well data free. Visit openoil.io to see the status of the project ";
 
 const darkTheme = createTheme({
   palette: {

@@ -3,6 +3,7 @@
   border: 1mm;
   background-color: #191e2b;
   display: grid;
+  width: 100%;
 }
 table {
   border-collapse: collapse;

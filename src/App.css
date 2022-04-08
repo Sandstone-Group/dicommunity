@@ -10,7 +10,9 @@
 }
 
 .background-color {
-  background-color: #191e2b;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
 }
 
 .display-home {
@@ -87,8 +89,9 @@
 }
 
 .row {
-  display: flexbox;
+  display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .form-style {

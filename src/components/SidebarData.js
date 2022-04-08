@@ -21,12 +21,6 @@ export const SidebarData = [
     path: "/community",
     icon: <IoIcons.IoMdPeople />,
   },
-
-  {
-    title: "Team",
-    path: "/team",
-    icon: <IoIcons.IoIosBody />,
-  },
   {
     title: "About diCommunity",
     path: "/about",
